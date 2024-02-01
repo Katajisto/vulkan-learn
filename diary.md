@@ -1,3 +1,6 @@
+
+Project: https://github.com/Katajisto/vulkan-learn
+
 # Milestone 1:
 I started the project by following a basic youtube tutorial with C and Vulkan and GLFW. 
 This went quite well for a while, until I got fed up with the slow pace of the tutorial.
