@@ -20,7 +20,7 @@ class VulkanContext {
 public:
     FrameData frames[FRAME_OVERLAP];
     FrameData& getCurrentFrame() { return frames[frameNumber % FRAME_OVERLAP];}
-    uint frameNumber;
+    int frameNumber;
     VkInstance instance;
     VkDebugUtilsMessengerEXT debugMessenger;
     VkPhysicalDevice physicalDevice;
@@ -52,7 +52,7 @@ void VulkanContext::initVulkan() {
     instance_builder.request_validation_layers ();
     instance_builder.use_default_debug_messenger();
 
-    auto instance_builder_return = instance_builder.set_app_name("KTJST!").build();
+    auto instance_builder_return = instance_builder.set_app_name("KTJST!").require_api_version(1,3,0).build();
     if (!instance_builder_return) {
         std::cerr << "Failed to create Vulkan instance. Error: " << instance_builder_return.error().message() << "\n";
     }
@@ -73,7 +73,7 @@ void VulkanContext::initVulkan() {
 
     vkb::PhysicalDeviceSelector selector{ vkb_inst };
     vkb::PhysicalDevice physicalDeviceTemp = selector
-            .set_minimum_version(1, 2)
+            .set_minimum_version(1, 3)
             .set_required_features_12(features)
             .set_required_features_13(feature2)
             .set_surface(surface)
@@ -232,13 +232,41 @@ void VulkanContext::doFrame() {
 
     transitionImage(cmds, swapchainImages[swapchainImageIndex], VK_IMAGE_LAYOUT_UNDEFINED, VK_IMAGE_LAYOUT_GENERAL);
     VkClearColorValue clearValue;
-    float flash = std::abs(std::sin(frameNumber / 120.f));
-    clearValue = { { 0.0f, 0.0f, flash, 1.0f } };
+    float val1 = std::abs(std::sin(frameNumber / 120.f));
+    float val2 = std::abs(std::sin(frameNumber / 60.f));
+    float val3 = std::abs(std::cos(frameNumber / 900.f));
+
+    clearValue = { { val1, val2, val3, 1.0f } };
 
     VkImageSubresourceRange clearRange = vi::image_subresource_range(VK_IMAGE_ASPECT_COLOR_BIT);
     vkCmdClearColorImage(cmds, swapchainImages[swapchainImageIndex], VK_IMAGE_LAYOUT_GENERAL, &clearValue, 1, &clearRange);
     transitionImage(cmds, swapchainImages[swapchainImageIndex],VK_IMAGE_LAYOUT_GENERAL, VK_IMAGE_LAYOUT_PRESENT_SRC_KHR);
     vkEndCommandBuffer(cmds);
+
+    VkCommandBufferSubmitInfo cmdinfo = vi::command_buffer_submit_info(cmds);
+
+    VkSemaphoreSubmitInfo waitInfo = vi::semaphore_submit_info(VK_PIPELINE_STAGE_2_COLOR_ATTACHMENT_OUTPUT_BIT_KHR,getCurrentFrame().swapchainSema);
+    VkSemaphoreSubmitInfo signalInfo = vi::semaphore_submit_info(VK_PIPELINE_STAGE_2_ALL_GRAPHICS_BIT, getCurrentFrame().renderSema);
+
+    VkSubmitInfo2 submit = vi::submit_info(&cmdinfo,&signalInfo,&waitInfo);
+
+
+    vkQueueSubmit2(graphicsQueue, 1, &submit, getCurrentFrame().renderFence);
+
+    VkPresentInfoKHR presentInfo = {};
+    presentInfo.sType = VK_STRUCTURE_TYPE_PRESENT_INFO_KHR;
+    presentInfo.pNext = nullptr;
+    presentInfo.pSwapchains = &swapchain;
+    presentInfo.swapchainCount = 1;
+
+    presentInfo.pWaitSemaphores = &getCurrentFrame().renderSema;
+    presentInfo.waitSemaphoreCount = 1;
+
+    presentInfo.pImageIndices = &swapchainImageIndex;
+
+    vkQueuePresentKHR(graphicsQueue, &presentInfo);
+
+    frameNumber++;
 }
 
 

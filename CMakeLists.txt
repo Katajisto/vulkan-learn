@@ -15,5 +15,10 @@ add_executable(vkbootproj main.cpp
         vkinit.cpp
         vkinit.h)
 
-target_link_libraries(vkbootproj glfw vulkan)
+set(ENV{VULKAN_SDK} "C:/VulkanSDK/1.3.275.0")
+
+find_package(Vulkan REQUIRED)
+
+target_link_libraries(vkbootproj ${Vulkan_LIBRARIES})
+target_link_libraries(vkbootproj ${CMAKE_SOURCE_DIR}/libs/libglfw3.a)
 target_link_libraries(vkbootproj vk-bootstrap::vk-bootstrap)
