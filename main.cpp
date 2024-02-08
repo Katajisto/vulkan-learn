@@ -3,6 +3,7 @@
 #include <cmath>
 #include <GLFW/glfw3.h>
 #include "vkinit.h"
+#include "vulkan/vulkan_core.h"
 
 #include <iostream>
 
@@ -64,18 +65,28 @@ void VulkanContext::initVulkan() {
 
     glfwCreateWindowSurface (instance, window, NULL, &surface);
 
-    VkPhysicalDeviceVulkan12Features features{};
-    VkPhysicalDeviceVulkan13Features feature2{};
+    VkPhysicalDeviceVulkan12Features features{
+        VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_2_FEATURES
+    };
+    VkPhysicalDeviceDynamicRenderingFeaturesKHR randomFeatures{
+        VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DYNAMIC_RENDERING_FEATURES
+    };
+    VkPhysicalDeviceSynchronization2FeaturesKHR randomFeatures2{
+        VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SYNCHRONIZATION_2_FEATURES
+    };
     features.bufferDeviceAddress = true;
     features.descriptorIndexing = true;
-    feature2.dynamicRendering = true;
-    feature2.synchronization2 = true;
+    randomFeatures.dynamicRendering = true;
+    randomFeatures2.synchronization2 = true;
 
     vkb::PhysicalDeviceSelector selector{ vkb_inst };
     vkb::PhysicalDevice physicalDeviceTemp = selector
-            .set_minimum_version(1, 3)
+            .set_minimum_version(1, 2)
             .set_required_features_12(features)
-            .set_required_features_13(feature2)
+            .add_required_extension("VK_KHR_dynamic_rendering")
+            .add_required_extension("VK_KHR_synchronization2")
+            .add_required_extension_features(randomFeatures)
+            .add_required_extension_features(randomFeatures2)
             .set_surface(surface)
             .select()
             .value();
