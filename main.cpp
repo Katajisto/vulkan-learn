@@ -46,7 +46,7 @@ public:
     void doFrame();
 };
 
-
+vkb::InstanceDispatchTable maketb;
 
 void VulkanContext::initVulkan() {
     vkb::InstanceBuilder instance_builder;
@@ -59,6 +59,7 @@ void VulkanContext::initVulkan() {
     }
 
     vkb::Instance vkb_inst  = instance_builder_return.value();
+    maketb = vkb_inst.make_table();
 
     instance = vkb_inst.instance;
     debugMessenger = vkb_inst.debug_messenger;
@@ -214,14 +215,14 @@ void transitionImage(VkCommandBuffer cmd, VkImage image, VkImageLayout currentLa
     imageBarrier.subresourceRange = subImage;
     imageBarrier.image = image;
 
-    VkDependencyInfo depInfo {};
+    VkDependencyInfoKHR depInfo {};
     depInfo.sType = VK_STRUCTURE_TYPE_DEPENDENCY_INFO;
     depInfo.pNext = nullptr;
 
     depInfo.imageMemoryBarrierCount = 1;
     depInfo.pImageMemoryBarriers = &imageBarrier;
 
-    vkCmdPipelineBarrier2(cmd, &depInfo);
+    maketb.fp_vkCmdPipelineBarrier2KHR(cmd, &depInfo);
 }
 
 void VulkanContext::doFrame() {
