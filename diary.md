@@ -28,3 +28,21 @@ I am very confused about many things. I have been so busy solving stupid build i
 I hope to spend the next 2 weeks on less build stuff and more actual learning. 
 
 I did not go over the process of writing the code too much, since I was mostly just following the tutorial, altough I followed it quite badly and will have to refactor many things in the coming weeks.
+
+# Milestone 2:
+
+I tried hard to get Vulkan 1.3 working on my mac, but this was clearly not meant to happen. It cost me a lot of time and I never got it working. Luckily, atleast I got a cleaner cmake file.
+
+So once again I did a lot of just copying tutorial code, since I had to change the tutorial to the first one I tried, because the new one wanted to use a new vulkan version that
+caused me to have so many problems. I copied very mindlessly the tutorial code up to vertex buffers in the vulkan-tutorial.com. Then after some work adding different kinds of flags, I 
+got the program to actually run on my mac finally. 
+
+Now I started work on the vertex buffers and I understood it mostly. I was able to send a buffer to the shader and draw it. I also configured CLion to run the script to compile the
+shaders every time I run the program, altough I need to add a system where it fails the build if it doesn't go trough. 
+
+Then next thing was to add some info about time to the shader. I was used to raylib that automatically provides this to the shader so I knew this was something that needs to be provided.
+I set up a pipeline to send  a frame info struct thing to the shader. It currently only sends a frame number but I probably want to add some other stuff there later on. Atleast time.
+
+Last thing I did was to add a deletion queue instead of the cleanup function. This way I can ask to delete the things the moment I create them, instead of having to go look for the cleanup function.
+
+I think I might need another queue once we create and delete things each frame.
