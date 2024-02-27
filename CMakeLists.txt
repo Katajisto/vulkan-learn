@@ -9,6 +9,7 @@ add_subdirectory(glm)
 
 add_executable(vkbootproj main.cpp
         delq.h
+        stb_image.h
 )
 
 find_package(Vulkan REQUIRED)

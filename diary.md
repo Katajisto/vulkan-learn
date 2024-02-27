@@ -46,3 +46,32 @@ I set up a pipeline to send  a frame info struct thing to the shader. It current
 Last thing I did was to add a deletion queue instead of the cleanup function. This way I can ask to delete the things the moment I create them, instead of having to go look for the cleanup function.
 
 I think I might need another queue once we create and delete things each frame.
+
+# Milestone 3
+
+Finally got one milestone done early! I just followed the tutorial to do index buffers,
+depth sorting of things and then loading textures working. This was a bit nicer milestone for
+me since a bit more of the things related to shader concepts I was already familiar with. Then I
+got the model to load.
+
+I lack the most understanding about all of the image stuff, there was a lot 
+of moving images around and transitioning them to different formats or something. I will probably need to go over that again later.
+
+I got a nice model of a Toyota Trueno AE86 rotating around with a repeating texture I made using
+google slides :D. 
+
+I had some difficulties with understanding the .obj fileformat, even though I used a library 
+to load it. I ran into errors, when the .obj file was missing the vt texture coordinate things.
+I got around this by just importing models into blender so I could export them
+in a controlled way with the things I needed.
+
+I also am left thinking about the differences between the way I put the view matrixes into the 
+shader and the way I put the frame number in and their differences.
+
+If I have some extra time, I could try to get different materials working so that the car would look nicer with
+different textures in different places. That would probably look nice with shading and lighting.
+
+## Progress screenshot
+![trueno](trueno.png)
+## My texture
+![texture](ktjst.png)
