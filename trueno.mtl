@@ -9,8 +9,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 3
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeCaliper/BrakeCaliper_color.png
-map_Bump -bm 1.000000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeCaliper/BrakeCaliper_normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeCaliper/BrakeCaliper_color.png
+map_Bump -bm 1.000000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeCaliper/BrakeCaliper_normal.png
 
 newmtl Brake_Disc
 Ka 1.000000 1.000000 1.000000
@@ -19,9 +19,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 3
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeDisc/Brake Disc_color.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeDisc/Brake Disc_roughness.png
-map_refl /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeDisc/Brake Disc_metallic.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeDisc/Brake Disc_color.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeDisc/Brake Disc_roughness.png
+map_refl Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/BrakeDisc/Brake Disc_metallic.png
 
 newmtl Interior
 Ka 1.000000 1.000000 1.000000
@@ -30,10 +30,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/SimpleBake_Bakes/Interior_Bake1_pbr_diffuse.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/SimpleBake_Bakes/Interior_Bake1_pbr_roughness.png
-map_refl /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/SimpleBake_Bakes/Interior_Bake1_pbr_metalness.png
-map_Bump -bm 1.000000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/SimpleBake_Bakes/Interior_Bake1_pbr_normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/SimpleBake_Bakes/Interior_Bake1_pbr_diffuse.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/SimpleBake_Bakes/Interior_Bake1_pbr_roughness.png
+map_refl Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/SimpleBake_Bakes/Interior_Bake1_pbr_metalness.png
+map_Bump -bm 1.000000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/SimpleBake_Bakes/Interior_Bake1_pbr_normal.png
 
 newmtl InteriorPlastic
 Ka 1.000000 1.000000 1.000000
@@ -42,9 +42,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic1/Interior1_Base_Color.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic1/Interior1_Roughness.png
-map_Bump -bm 0.500000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic1/Interior1_Normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic1/Interior1_Base_Color.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic1/Interior1_Roughness.png
+map_Bump -bm 0.500000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic1/Interior1_Normal.png
 
 newmtl InteriorPlastic2
 Ka 1.000000 1.000000 1.000000
@@ -53,9 +53,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic2/Interior2_Base_Color2.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic2/Interior2_Roughness.png
-map_Bump -bm 0.500000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic2/Interior2_Normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic2/Interior2_Base_Color2.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic2/Interior2_Roughness.png
+map_Bump -bm 0.500000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/C:/Users/d2W81/Desktop/InteriorMaterials/InteriorPlastic2/Interior2_Normal.png
 
 newmtl LampCovers
 Ns 360.000000
@@ -75,8 +75,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/LicensePlate/LicensePlate_Color.jpeg
-map_Bump -bm 1.000000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/takumilicensenormal2.jpg
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/LicensePlate/LicensePlate_Color.jpeg
+map_Bump -bm 1.000000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86/takumilicensenormal2.jpg
 
 newmtl Mirror
 Ns 1000.000000
@@ -115,10 +115,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Rim/WatanabeRim_color.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Rim/WatanabeRim_roughness.png
-map_refl /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Rim/WatanabeRim_metallic.png
-map_Bump -bm 1.000000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Rim/WatanabeRim_normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Rim/WatanabeRim_color.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Rim/WatanabeRim_roughness.png
+map_refl Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Rim/WatanabeRim_metallic.png
+map_Bump -bm 1.000000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Rim/WatanabeRim_normal.png
 
 newmtl Seatbelt
 Ka 1.000000 1.000000 1.000000
@@ -127,10 +127,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/Cube_color.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/Cube_roughness.png
-map_refl /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/Cube_metallic.png
-map_Bump -bm 1.000000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/Cube_normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/Cube_color.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/Cube_roughness.png
+map_refl Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/Cube_metallic.png
+map_Bump -bm 1.000000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/Cube_normal.png
 
 newmtl Secondary
 Ns 416.612183
@@ -158,11 +158,11 @@ Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_color.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_roughness.png
-map_refl /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_metallic.png
-map_d /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_color.png
-map_Bump -bm 1.000000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_color.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_roughness.png
+map_refl Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_metallic.png
+map_d Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_color.png
+map_Bump -bm 1.000000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/F:/BLENDER/3D/3DMODELS/CARS/AE86/F/kiera/New folder/New Folder/SteeringWheel/SteeringWheel_normal.png
 
 newmtl TailightFrame
 Ns 0.000000
@@ -181,10 +181,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Tire/Tire_color.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Tire/Tire_roughness.png
-map_refl /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Tire/Tire_metallic.png
-map_Bump -bm 1.000000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Tire/Tire_normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Tire/Tire_color.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Tire/Tire_roughness.png
+map_refl Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Tire/Tire_metallic.png
+map_Bump -bm 1.000000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Wheels/Tire/Tire_normal.png
 
 newmtl Trim1
 Ns 153.074936
@@ -203,10 +203,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/Trim2/Trim2_Color.png
-map_Ns /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/Trim2/Trim2_roughness.png
-map_refl /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/Trim2/Trim2_metalness.png
-map_Bump -bm 1.000000 /Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/Trim2/Trim2_normal.png
+map_Kd Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/Trim2/Trim2_Color.png
+map_Ns Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/Trim2/Trim2_roughness.png
+map_refl Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/Trim2/Trim2_metalness.png
+map_Bump -bm 1.000000 Users/tuomas.katajisto/Downloads/toyota-ae86-sprinter-trueno-zenki/source/Z:/BLENDER/3DMODELS/CARS/AE86MATERIALS/DONE/Exterior/Trim2/Trim2_normal.png
 
 newmtl Trueno
 Ns 1000.000000

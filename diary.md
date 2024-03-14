@@ -75,3 +75,25 @@ different textures in different places. That would probably look nice with shadi
 ![trueno](trueno.png)
 ## My texture
 ![texture](ktjst.png)
+
+# Milestone 4
+
+Did not have time to do the materials, that seemed like a very big task, when I did not even really understand how they worked in Blender, and I already started work on the 5th milestone with my own program. 
+I hope the lighting is correct. I have some doubts about it being entirely correct. But the end result looks fairly good.
+Had some trouble getting MSAA to work due to a bug with the sample amount being declared twice in the
+image generation, causing it to be 1 even when it was set to 4. I was happy that I was able to debug the
+issue with the message from Vulkan's validation layers using the Clion debugger. 
+
+I added an "antenna" to the car in order to make sure that MSAA was
+working, since was not able to notice it very well and was not sure if it 
+was working. At first it was not working due to the bug, and the first image confirmed
+to me that it was not working.
+
+## Antenna before MSAA
+![before](no-msaa.png)
+
+## Antenna after MSAA
+![after](msaa.png)
+
+## Result
+![render_final.png](render_final.png)

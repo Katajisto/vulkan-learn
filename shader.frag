@@ -11,7 +11,6 @@ layout(binding = 1) uniform sampler2D logoSampler;
 layout(location = 0) out vec4 outColor;
 
 void main() {
-
     vec3 lightPosition = vec3(3.0, -2.0, 3.0);
     float toLight = length(fragPos - lightPosition);
     vec3 lightDir = normalize(fragPos - lightPosition);
@@ -30,14 +29,10 @@ void main() {
     vec3 diffColor = vec3(1.0, 0.9, 0.75) * 0.6;
     vec3 specColor = vec3(1.0, 1.0, 1.0);
 
-    vec3 lightFactor = ambient + specular * specColor + diffColor * lambert;
-
-
+    vec3 lightFactor = ambient + diffColor * lambert * 1/((toLight/7));
 
     // outColor = vec4(fragColor * texture(logoSampler, abs(fragTexCoord * 24.0)).rgb, 1.0);
-    vec3 outC = vec3(texture(logoSampler, abs(fragTexCoord * 24.0)).rgb * lightFactor);
-
+    vec3 outC = vec3(texture(logoSampler, abs(fragTexCoord * 24.0)).rgb * lightFactor + specular * specColor);
     vec3 colorAfterGamma = pow(outC, vec3(1.0 / 2.2));
     outColor = vec4(colorAfterGamma, 1.0);
-
 }
